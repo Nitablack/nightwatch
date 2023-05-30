@@ -15,7 +15,7 @@ module.exports = {
     'Search for word': function (browser) { // ТК на поиск в виде функции
         let word = browser.globals.searchText; //используем глобальные переменные для поиска
 
-        browser.assert.notEmpty('.collapse navbar-collapse');//проверка из assertions на непустой заголовок
+        browser.assert.notEmpty('.row');//проверка из assertions на непустой заголовок
 
         browser 
             .page.shop() //обращаемся к pageObject    
